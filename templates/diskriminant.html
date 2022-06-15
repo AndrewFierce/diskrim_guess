@@ -1,0 +1,14 @@
+{% extends "base_template.html" %}
+{% block head %}<h1>Корни квадратного уравнения</h1>{% endblock %}
+    {% block content %}
+    <p>Введите числа на месте пропусков:</p>
+    <form id="send_values" role="form" method="POST" action="">
+    <p><input size="1"name="a" placeholder="a" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+        x<sup>2</sup>+
+        <input size="1" name="b" placeholder="b" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+        x+
+        <input size="1" name="c" placeholder="c" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+        =0</p>
+        <button type="submit" class="btn button" name="send_data">Отправить данные</button>
+    </form>
+    {% endblock %}

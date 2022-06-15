@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>Discriminant</title>
+		<link rel="stylesheet" href='/static/style.css' />
+		<link rel="icon" type="image/x-icon" href="/static/green_energy.png">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    	<script type="text/javascript" src="/static/script.js"></script>
+	</head>
+<body>
+    {% block head %}{% endblock %}
+    <nav >
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a href="/diskriminant">Решение квадратного уравнения</a></li>
+            <li><a href="/guess">Угадай предмет</a></li>
+        </ul>
+      </div>
+    </nav>
+    {% block content %}{% endblock %}
+    <p id="responce"></p>
+</body>
+</html>

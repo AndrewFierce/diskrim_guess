@@ -1,0 +1,9 @@
+{% extends "base_template.html" %}
+{% block head %}<h1>Угадай предмет</h1>{% endblock %}
+{% block content %}
+    <p>Введите целое число от 1 до 100 и получите цвет предмета</p>
+    <form id="send_values" role="form" method="POST" action="">
+        <p><input size="5" name="number" placeholder="1-100" type="number" min="0" max="99" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
+        <br><br><button type="submit" class="btn button" name="send_data">Угадать</button>
+    </form>
+{% endblock %}
